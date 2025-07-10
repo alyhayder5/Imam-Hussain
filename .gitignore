@@ -1,0 +1,18 @@
+
+# vscode
+.vscode/
+
+# Dependency directories
+/node_modules
+
+# Next.js build output
+/.next
+/out
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
