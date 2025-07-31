@@ -2,11 +2,16 @@
   "name": "imam-hussain",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "ts-check": "tsc --skipLibCheck --noEmit",
+    "precommit": "lint-staged --concurrent false",
     "prepare": "husky"
   },
   "dependencies": {
