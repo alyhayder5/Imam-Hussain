@@ -1,11 +1,12 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import Footer from '@/components/footer';
+import Header from '@/components/header';
+import Topic from '@/components/topic';
 
 export default function Home() {
   return (
     <main>
       <Header />
-      <div className="h-[80vh]" />
+      <Topic />
       <Footer />
     </main>
   );
