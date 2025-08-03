@@ -11,7 +11,7 @@ function Topic() {
         {topics.map((card, i) => (
           <a
             key={i}
-            href={card.href}
+            href="#"
             className="backdrop-blur-md bg-white/5 border border-white/10 shadow-xl rounded-2xl overflow-hidden text-white transition hover:scale-[1.03] hover:border-[#F9A307] hover:shadow-[0_0_20px_#F9A307] duration-300"
           >
             {card.image && (
