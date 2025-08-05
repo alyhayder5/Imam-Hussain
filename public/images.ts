@@ -9,9 +9,11 @@ import letter from './letter.png';
 import miracles from './miracles.jpg';
 import karbalaBattle from './karbala.png';
 import ziyarat from './ziyarat.jpg';
+import HamBurgerLogo from './hamburger.svg?url';
 
 export const images = {
   logo,
+  HamBurgerLogo,
   birth,
   karbalaBattle,
   childhood,
