@@ -7,7 +7,7 @@ export default function LanguageSelector() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="relative inline-block w-32">
+    <div className="relative w-32 lg:inline-block hidden">
       <button
         onClick={() => setOpen(!open)}
         className="w-full bg-transparent border border-gray-600 text-white rounded px-2 py-1 flex items-center justify-between"
