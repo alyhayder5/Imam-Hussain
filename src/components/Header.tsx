@@ -2,7 +2,7 @@
 
 import { IoMdSearch } from 'react-icons/io';
 import { useState } from 'react';
-import { Image } from './image';
+import { Image } from './Image';
 import LanguageSelector from './LanguageSelector';
 
 const Header = () => {
