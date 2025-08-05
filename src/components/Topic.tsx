@@ -6,8 +6,8 @@ import { topics } from '@/data/topic';
 
 function Topic() {
   return (
-    <div className="min-h-screen bg-[#0e0e0e] py-16 pt-[30vh]">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[80vw] mx-auto px-4 gap-20">
+    <div className="min-h-screen bg-[#0e0e0e] py-16 sm:pt-[30vh] pt-[25vh]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[84vw] sm:w-[80vw] mx-auto sm:px-4 sm:gap-20 gap-10">
         {topics.map((card, i) => (
           <a
             key={i}
