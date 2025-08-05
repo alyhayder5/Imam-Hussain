@@ -1,14 +1,6 @@
 'use client';
+import { languages } from '@/data/language';
 import { useState } from 'react';
-
-const languages = [
-  { name: 'English', flag: '🇬🇧' },
-  { name: 'اردو', flag: '🇵🇰' },
-  { name: 'हिन्दी', flag: '🇮🇳' },
-  { name: 'Français', flag: '🇫🇷' },
-  { name: 'Español', flag: '🇪🇸' },
-  { name: 'فارسی', flag: '🇮🇷' },
-];
 
 export default function LanguageSelector() {
   const [selected, setSelected] = useState(languages[0]);
