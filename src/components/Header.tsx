@@ -3,7 +3,7 @@
 import { IoMdSearch } from 'react-icons/io';
 import { useState } from 'react';
 import { Image } from './image';
-import LanguageSelector from './languageSelector';
+import LanguageSelector from './LanguageSelector';
 
 const Header = () => {
   const [search, setSearch] = useState('');
