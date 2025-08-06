@@ -14,7 +14,7 @@ const Footer = () => {
 
       <div className="flex justify-center items-center mt-20 sm:mt-6 space-x-6">
         <a
-          href="mailto:alyhayder2005@gmail.com"
+          href="mailto:rahenajaf110@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Email"
