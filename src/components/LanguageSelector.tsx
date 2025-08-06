@@ -44,7 +44,7 @@ export default function LanguageSelector() {
       </button>
 
       {open && (
-        <ul className="absolute w-full backdrop-filter backdrop-blur-lg shadow-lg border border-gray-600 rounded mt-1 z-10">
+        <ul className="absolute w-full backdrop-filter backdrop-blur-lg shadow-lg border border-gray-600 rounded mt-1 z-10 bg-black/50">
           {languages
             .filter((item) => item.name !== selected.name)
             .map((lang) => (

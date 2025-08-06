@@ -1,20 +1,16 @@
 'use client';
 
 import { useEffect } from 'react';
-import { IoMdSearch } from 'react-icons/io';
 import { RxCross1 } from 'react-icons/rx';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Image } from './image';
 import LanguageSelector from './LanguageSelector';
+import NavLink from './NavLink';
 
 const HeaderMobile = ({
-  search,
-  setSearch,
   showNavBar,
   setShowNavBar,
 }: {
-  search: string;
-  setSearch: (val: string) => void;
   showNavBar: boolean;
   setShowNavBar: (val: boolean) => void;
 }) => {
@@ -78,19 +74,8 @@ const HeaderMobile = ({
             >
               <RxCross1 color="#F9A307" size={32} />
             </button>
-
-            <div className="flex items-center border-[#F9A307] border-2 bg-black/1 rounded-lg px-2">
-              <IoMdSearch fontSize={30} className="text-gray-400" />
-              <input
-                type="text"
-                placeholder="Search"
-                className="w-full p-2 ml-2 rounded-lg bg-opacity-10 text-white placeholder-gray-400 focus:outline-none"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-            </div>
-
             <LanguageSelector />
+            <NavLink />
           </motion.div>
         )}
       </AnimatePresence>
