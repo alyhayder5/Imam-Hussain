@@ -11,6 +11,9 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-cement: var(--font-beautiful-people);
+  --text-md: 16px;
+  --text-guru: 17px;
+  --text-2xxl: 26px;
 }
 
 @media (prefers-color-scheme: dark) {
