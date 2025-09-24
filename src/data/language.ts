@@ -1,8 +1,14 @@
-export const languages = [
-  { name: 'English', flag: '🇬🇧' },
-  { name: 'اردو', flag: '🇵🇰' },
-  { name: 'हिन्दी', flag: '🇮🇳' },
-  { name: 'Français', flag: '🇫🇷' },
-  { name: 'Español', flag: '🇪🇸' },
-  { name: 'فارسی', flag: '🇮🇷' },
+export interface Language {
+  name: string;
+  flag: string;
+  code: string;
+}
+
+export const languages: Language[] = [
+  { name: 'English', flag: '🇬🇧', code: 'en' },
+  { name: 'اردو', flag: '🇵🇰', code: 'ur' },
+  { name: 'हिन्दी', flag: '🇮🇳', code: 'hi' },
+  { name: 'Français', flag: '🇫🇷', code: 'fr' },
+  { name: 'Español', flag: '🇪🇸', code: 'es' },
+  { name: 'فارسی', flag: '🇮🇷', code: 'fa' },
 ];

@@ -1,14 +1,19 @@
 'use client';
 
 import { FaRedditAlien, FaEnvelope, FaDiscord } from 'react-icons/fa';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-black text-white px-6 py-10 border-t border-gray-800">
       <div className="max-w-7xl mx-auto space-y-2 *:text-gray-300 *:text-sm">
-        <p>📜 The comprehensive Biography of Imam Hussain (a.s)</p>
+        <p>📜 {t('footer.biography')}</p>
         <p>
-          🤲 Serving <span className="font-semibold">مؤمنين</span> since 2025
+          🤲 {t('footer.serving')}{' '}
+          <span className="font-semibold">{t('footer.believers')}</span>{' '}
+          {t('footer.since')} 2025
         </p>
       </div>
 
@@ -48,7 +53,7 @@ const Footer = () => {
         }}
         className="mt-4 text-center text-sm text-white"
       >
-        Rah-e-Najaf – All rights reserved © {new Date().getFullYear()}
+        {t('footer.copyright')} {new Date().getFullYear()}
       </div>
     </footer>
   );

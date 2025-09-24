@@ -4,8 +4,11 @@ import React from 'react';
 import Image from 'next/image';
 import Slogan from './Slogan';
 import { topics } from '@/data/topic';
+import { useTranslation } from '@/contexts/TranslationContext';
 
 function Topic() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-[#0e0e0e] py-16">
       <Slogan />
@@ -20,14 +23,16 @@ function Topic() {
               <div className="relative w-full h-60">
                 <Image
                   src={card.image}
-                  alt={card.title}
+                  alt={t(`topics.${card.translationKey}`)}
                   fill
                   className="object-cover"
                 />
               </div>
             )}
             <div className="p-6">
-              <h2 className="text-xl font-semibold">{card.title}</h2>
+              <h2 className="text-xl font-semibold">
+                {t(`topics.${card.translationKey}`)}
+              </h2>
             </div>
           </a>
         ))}
