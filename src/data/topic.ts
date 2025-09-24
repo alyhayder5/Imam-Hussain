@@ -4,6 +4,7 @@ import { images } from '../../public/images';
 export interface TopicItem {
   title: string;
   image?: string | StaticImageData;
+  param: string;
 }
 
 export const topics: TopicItem[] = [
@@ -11,48 +12,61 @@ export const topics: TopicItem[] = [
     title:
       'The Noble Birth of Imam Hussain (ع), Grandson of the Holy Prophet (ﷺ)',
     image: images.birth,
+    param: 'the-noble-birth-of-imam-hussain-grandson-of-the-holy-prophet',
   },
   {
     title:
       'Childhood of Imam Hussain (ع) — In the Loving Care of the Prophet Muhammad (ﷺ)',
     image: images.childhood,
+    param:
+      'childhood-of-imam-hussain-in-the-loving-care-of-the-prophet-muhammad',
   },
   {
     title:
       'Imam Hussain’s (ع) Early Youth — Nurtured by Light, Honored by Prophets',
     image: images.youth,
+    param: 'imam-hussain-early-youth-nurtured-by-light-honored-by-prophets',
   },
   {
     title:
       'Imam Hussain’s (ع) Role During the Caliphate of His Father, Imam Ali (ع)',
     image: images.father,
+    param: 'imam-hussain-role-during-the-caliphate-of-his-father-imam-ali',
   },
   {
     title:
-      'Standing Beside His Older Brother, Imam Hasan (ع), in the Days of Caliphate',
+      'Standing Beside His Older Brother, Imam Hassan (ع), in the Days of Caliphate',
     image: images.brother,
+    param:
+      'standing-beside-his-older-brother-imam-hassan-in-the-days-of-caliphate',
   },
   {
     title:
       'The Loyal Companions of Imam Hussain (ع) — Embodiments of Faith & Courage',
     image: images.companion,
+    param: 'the-loyal-companions-of-imam-hussain-embodiments-of-faith-courage',
   },
   {
     title: 'Divine Words — The Speeches & Letters of Imam Hussain (ع)',
     image: images.letter,
+    param: 'divine-words-the-speeches-letters-of-imam-hussain',
   },
   {
     title: ' Imam Hussain’s (ع) Miracles — Reflections of Divine Grace',
     image: images.miracles,
+    param: 'imam-hussain-miracles-reflections-of-divine-grace',
   },
   {
     title:
       'The Battle of Karbala — A Sacred Uprising Against Injustice and Oppression',
     image: images.karbalaBattle,
+    param:
+      'the-battle-of-karbala-a-sacred-uprising-against-injustice-and-oppression',
   },
   {
     title:
       'Ziyarat Imam Hussain (ع) — Spiritual Ascension Through Love and Loyalty',
     image: images.ziyarat,
+    param: 'ziyarat-imam-hussain-spiritual-ascension-through-love-and-loyalty',
   },
 ];

@@ -33,5 +33,6 @@
     "lint-staged": "^16.1.2",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "pnpm@10.15.1+sha1.8e9a3dab77f9a4336289d2488d2d31f69e88ebea"
 }
